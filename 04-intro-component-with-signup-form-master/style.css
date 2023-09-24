@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: #fe7a78;
+  background-image: url("./images/bg-intro-mobile.png");
+}
+
+header {
+  margin: 70px 30px 60px 30px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+header p {
+  color: #f6f5fc;
+  line-height: 1.5;
+}
+
+.price {
+  margin: 20px 30px;
+  padding: 20px 80px;
+  background-color: #5d54a3;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 1.5;
+  box-shadow: 0 8px #db6668;
+}
+
+.price p {
+  font-weight: lighter;
+}
+
+.price span {
+  font-weight: bold;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.user_info input::placeholder {
+  font-weight: bolder;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.input_container img {
+  position: absolute;
+  transform: translateY(50%) translateX(-150%);
+  width: 25px;
+  height: 25px;
+}
+
+.input_container p {
+  font-size: small;
+  color: #ff7779;
+  text-align: end;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.btn {
+  background-color: #37cc8b;
+  color: #fff;
+  font-size: large;
+  box-shadow: 0 5px #32b981;
+}
+
+.btn:hover {
+  background-color: #77e2b4;
+}
+
+.user_info .terms {
+  font-size: small;
+  margin: 5px 15px;
+  color: #cbcad2;
+  line-height: 1.5;
+}
+
+.user_info span {
+  font-weight: bold;
+  color: #dd8e8f;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  form {
+    display: flex;
+    margin: 40px 150px;
+    gap: 17px;
+  }
+
+  header {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  header h1 {
+    font-size: 50px;
+    text-align: start;
+    margin: 0;
+  }
+  header p {
+    font-size: large;
+    text-align: start;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .user_info {
+    padding: 35px;
+  }
+
+  .attribution {
+   position: absolute;
+   bottom: 10%;
+   right: 40%;
+  }
+}

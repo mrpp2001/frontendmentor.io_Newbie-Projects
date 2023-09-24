@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141519;
+  color: #fff;
+  font-family: Overpass, Arial, Helvetica, sans-serif;
+}
+
+.card {
+  width: 350px;
+  height: 330px;
+  background-color: aqua;
+  margin: 35% auto;
+  padding: 25px;
+  border-radius: 15px;
+  background-image: linear-gradient(#1f2630, #171e28);
+}
+
+.card img {
+  padding: 10px;
+  background-color: #262f38;
+  border-radius: 50%;
+  width: 35px;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-weight: 500;
+  font-size: x-larger;
+}
+
+.card p {
+  font-size: small;
+  font-weight: 300;
+  margin: 10px 0;
+  color: #7e848e;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  text-align: center;
+}
+
+/* .ratings li {
+  background-color: #262f38;
+  color: #7e848e;
+  list-style-type: none;
+  width: 30px;
+  border-radius: 50%;
+align-items: center;
+
+} */
+.rating-value {
+  cursor: pointer;
+  background-color: #262f38;
+  color: #7e848e;
+  padding-block: 0.7rem;
+  padding-inline: 1rem;
+  border-radius: 100%;
+  list-style-type: none;
+}
+
+.ratings li:hover {
+  background-color: #7b8897;
+  color: #fff;
+}
+
+.ratings .active {
+  background-color: #fc7613;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #fc7613;
+  border: none;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #fc7613;
+}
+
+/* ------------- Thank You Section --------------- */
+
+.thanku {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thanku img {
+  width: 50%;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.thanku .score {
+  background-color: #272e38;
+  color: #af6a38;
+  font-size: small;
+  border: none;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+.thanku h1 {
+  font-size: x-large;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.thanku p {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(244, 97%, 73%);
+}
+
+@media (min-width: 640px) {
+  .card {
+    width: 412px;
+    height: 315px;
+    margin: 12% auto;
+  }
+  .thanku {
+    width: 412px;
+    height: 340px;
+    margin: 12% auto;
+  }
+}
